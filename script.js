@@ -268,6 +268,22 @@ function finish() {
     store();
 }
 
+function credits() {
+  let element = document.getElementById('creditsText');
+  let button = document.getElementById('creditsButton');
+  console.log(button);
+  let hasClass = element.classList.contains("visible"); //true
+  if (hasClass == true) {
+    element.classList.add("invisible");
+    element.classList.remove("visible");
+    button.classList.remove("activeButton");
+  } else {
+    element.classList.add("visible");
+    button.classList.add("activeButton");
+    element.classList.remove("invisible");
+  }
+}
+
 var imageLoader = document.getElementById('imageLoader');
     imageLoader.addEventListener('change', handleImage, false);
 

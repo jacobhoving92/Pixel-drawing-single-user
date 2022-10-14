@@ -7,7 +7,14 @@
  
     <canvas id="canvas" width="4096" height="4096"></canvas>
 
+    <div id="credits">
+      <p id="creditsText" class="invisible">
+        16777216, Concept & Design: Jacob Hoving, Programming: Ingo Valente
+      </p>
+    </div>
+
 <div id="container">
+  <div>
     <p class="allData">
       Pixels drawn: <span id="pixelsDrawn"></span>, Pixels remaining:
       <span id="pixelsRemaining"></span>, Current Color: R:<span
@@ -15,7 +22,13 @@
       ></span>
       G:<span id="green"></span> B:<span id="blue"></span>
     </p>
-    <button onclick="finish()">Finish</button>
+  </div>
+   <div>
+    <button onclick="process()">Process</button>
+   </div>
+   <div>
+    <button id="creditsButton" onclick="credits()">Credits</button>
+   </div>
   </div>
   <input type="file" id="imageLoader" name="imageLoader"/>
 
